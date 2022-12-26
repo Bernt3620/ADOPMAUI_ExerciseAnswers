@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Text;
 
-namespace ADOPMAUI_ExerciseAnswers.Models
+namespace ADOPMAUI_Exercise.Models
 {
     public class NamedColor
     {

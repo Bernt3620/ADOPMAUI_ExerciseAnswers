@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADOPMAUI_ExerciseAnswers.Models
+namespace ADOPMAUI_Exercise.Models
 {
     public class Friend
     {

@@ -1,6 +1,6 @@
-using ADOPMAUI_ExerciseAnswers.ViewModels;
+using ADOPMAUI_Exercise.ViewModels;
 
-namespace ADOPMAUI_ExerciseAnswers.Views
+namespace ADOPMAUI_Exercise.Views
 {
 
     public partial class Lesson06a : ContentPage

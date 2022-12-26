@@ -1,4 +1,4 @@
-﻿namespace ADOPMAUI_ExerciseAnswers;
+﻿namespace ADOPMAUI_Exercise;
 
 public static class MauiProgram
 {

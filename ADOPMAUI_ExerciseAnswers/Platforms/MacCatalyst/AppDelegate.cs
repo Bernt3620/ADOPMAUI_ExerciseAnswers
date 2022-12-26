@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace ADOPMAUI_ExerciseAnswers;
+namespace ADOPMAUI_Exercise;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

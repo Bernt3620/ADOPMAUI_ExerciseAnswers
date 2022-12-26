@@ -1,4 +1,4 @@
-﻿namespace ADOPMAUI_ExerciseAnswers.Globals
+﻿namespace ADOPMAUI_Exercise.Globals
 {
     static class AppConstants
     {

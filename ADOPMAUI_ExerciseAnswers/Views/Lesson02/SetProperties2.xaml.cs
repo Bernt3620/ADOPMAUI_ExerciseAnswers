@@ -1,6 +1,6 @@
-using ADOPMAUI_ExerciseAnswers.Models;
+using ADOPMAUI_Exercise.Models;
 
-namespace ADOPMAUI_ExerciseAnswers.Views.Lesson02;
+namespace ADOPMAUI_Exercise.Views.Lesson02;
 
 
 public partial class SetProperties2 : ContentPage

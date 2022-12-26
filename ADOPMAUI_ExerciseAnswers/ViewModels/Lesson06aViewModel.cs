@@ -1,7 +1,7 @@
-﻿//using ADOPMAUI_ExerciseAnswers.Views.Lesson06;
+﻿//using ADOPMAUI_Exercise.Views.Lesson06;
 using Microsoft.Maui.Controls;
 
-namespace ADOPMAUI_ExerciseAnswers.ViewModels
+namespace ADOPMAUI_Exercise.ViewModels
 {
     public class Lesson06aViewModel
     {

@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace ADOPMAUI_ExerciseAnswers;
+namespace ADOPMAUI_Exercise;
 
 [Application]
 public class MainApplication : MauiApplication

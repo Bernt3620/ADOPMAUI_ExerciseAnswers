@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace ADOPMAUI_ExerciseAnswers;
+namespace ADOPMAUI_Exercise;
 
 public class Program
 {

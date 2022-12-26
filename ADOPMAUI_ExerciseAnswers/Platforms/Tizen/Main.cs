@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace ADOPMAUI_ExerciseAnswers;
+namespace ADOPMAUI_Exercise;
 
 class Program : MauiApplication
 {
