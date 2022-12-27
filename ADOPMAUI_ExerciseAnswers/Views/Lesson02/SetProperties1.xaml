@@ -3,18 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ADOPMAUI_Exercise.Views.Lesson02.SetProperties1"
              Title="SetProperties1">
-
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Label 
-            Text="Welcome to .NET MAUI!"
+            <Label x:Name="lblWelcome"
+
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-            <BoxView x:Name="lblColorBox" HeightRequest="200"></BoxView>
-        <Button Text="Change Color" Clicked="Button_Clicked"></Button>
+
+            <BoxView x:Name="lblColorBox" HeightRequest="200" Color="Coral"/>
+            <Button Text="Next Color" Clicked="Button_Clicked"/>
+            <Button Text="Prev Color" Clicked="Button_Clicked_1"/>
 
         </VerticalStackLayout>
     </ScrollView>
