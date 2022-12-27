@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Models\Rectangle.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="Views\Lesson02\MarkupExtension3.xaml.cs">
 	    <DependentUpon>MarkupExtension3.xaml</DependentUpon>
 	  </Compile>
@@ -60,6 +64,9 @@
 	  </Compile>
 	  <Compile Update="Views\Lesson02\SetProperties2.xaml.cs">
 	    <DependentUpon>SetProperties2.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson03\ScrollViewExercise.xaml.cs">
+	    <DependentUpon>ScrollViewExercise.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -89,6 +96,27 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson03a.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\AbsoluteLayoutExercise.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\AbsoluteLayoutExploration.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\GridLayoutExercise.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\GridLayoutExploration.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\ScrollViewExercise.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\StackLayoutExercise.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson03\StackLayoutExploration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson04a.xaml">
