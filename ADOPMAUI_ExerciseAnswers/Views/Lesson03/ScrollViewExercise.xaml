@@ -4,7 +4,12 @@
 x:Class="ADOPMAUI_Exercise.Views.Lesson03.ScrollViewExercise"
 Title="ScrollView Demo - XAML">
 	<ContentPage.Content>
-		<ScrollView>
+        
+        <!-- To engage Scrolling 
+        <ScrollView Orientation="Both"  VerticalScrollBarVisibility="Always" HorizontalScrollBarVisibility="Always">
+        -->
+        <ScrollView Orientation="Both"  VerticalScrollBarVisibility="Always" HorizontalScrollBarVisibility="Always">
+
             <StackLayout>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -37,7 +42,11 @@ Title="ScrollView Demo - XAML">
                     </StackLayout>
                 </Grid>
             </StackLayout>
-
         </ScrollView>
-	</ContentPage.Content>
+
+        <!-- To engage Scrolling 
+        </ScrollView>
+        -->
+
+    </ContentPage.Content>
 </ContentPage>

@@ -50,6 +50,19 @@
 
 	<ItemGroup>
 	  <Compile Remove="Models\Rectangle.cs" />
+	  <Compile Remove="Views\Lesson03\AbsoluteLayoutExploration.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\camelface.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\Lesson03\AbsoluteLayoutExploration.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\camelface.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -101,22 +114,13 @@
 	  <MauiXaml Update="Views\Lesson03\AbsoluteLayoutExercise.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Lesson03\AbsoluteLayoutExploration.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson03\GridLayoutExercise.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Lesson03\GridLayoutExploration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson03\ScrollViewExercise.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson03\StackLayoutExercise.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Lesson03\StackLayoutExploration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson04a.xaml">
