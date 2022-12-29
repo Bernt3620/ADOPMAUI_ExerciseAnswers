@@ -15,8 +15,8 @@ Title="StackLayout Demo - XAML">
             <BoxView Color="Bisque" HeightRequest ="50"/>
             <StackLayout HeightRequest="200" Spacing="50" Orientation="Horizontal" HorizontalOptions="Center">
                 <StackLayout Orientation="Vertical" WidthRequest="700" Spacing="20">
-                <BoxView Color="DarkSalmon" HeightRequest ="50" WidthRequest="200" HorizontalOptions="Start"/>
-                <BoxView Color="LightCoral" HeightRequest ="50" WidthRequest="200" HorizontalOptions="Center"/>
+                    <BoxView Color="DarkSalmon" HeightRequest ="50" WidthRequest="200" HorizontalOptions="Start"/>
+                    <BoxView Color="LightCoral" HeightRequest ="50" WidthRequest="200" HorizontalOptions="Center"/>
                     <BoxView Color="Fuchsia" HeightRequest ="50" WidthRequest="200" HorizontalOptions="End"/>
                 </StackLayout>
 
