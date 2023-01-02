@@ -1,4 +1,4 @@
-﻿//using ADOPMAUI_Exercise.Views.Lesson05;
+﻿using ADOPMAUI_Exercise.Views.Lesson05;
 using Microsoft.Maui.Controls;
 
 namespace ADOPMAUI_Exercise.ViewModels
@@ -22,16 +22,17 @@ namespace ADOPMAUI_Exercise.ViewModels
         {
             All = new List<Lesson05aViewModel>
             {
-/*
-                new Lesson05aViewModel(typeof(ContentPage1), "ContentPage1",
-                        "Navigate to ContentPage1"),
+               new Lesson05aViewModel(typeof(ListViewExercise1), "ListView Exercise1",
+                        "Connect a ListView to Datamodel"),
 
-                new Lesson05aViewModel(typeof(ContentPage2), "ContentPage2",
-                        "Navigate to ContentPage2"),
-                
-                new Lesson05aViewModel(typeof(ContentPage3), "ContentPage3",
-                        "Navigate to ContentPage3"),
-*/
+                new Lesson05aViewModel(typeof(ListViewExercise2), "ListView Exercise2",
+                        "Customize the ListView by adding images"),
+
+                new Lesson05aViewModel(typeof(ListViewExercise3), "ListView Exercise3",
+                        "Customize the ListView by adding buttons"),
+
+                new Lesson05aViewModel(typeof(ListViewExercise4), "ListView Exercise4",
+                        "Use Linq to group items"),
             };
         }
 

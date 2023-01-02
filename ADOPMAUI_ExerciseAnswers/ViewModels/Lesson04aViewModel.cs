@@ -1,4 +1,4 @@
-﻿//using ADOPMAUI_Exercise.Views.Lesson04;
+﻿using ADOPMAUI_Exercise.Views.Lesson04;
 using Microsoft.Maui.Controls;
 
 namespace ADOPMAUI_Exercise.ViewModels
@@ -22,22 +22,24 @@ namespace ADOPMAUI_Exercise.ViewModels
         {
             All = new List<Lesson04aViewModel>
             {
-/*
-                new Lesson04aViewModel(typeof(PickerDemoPage), "Picker Examples",
-                        "Pick a value from Date, Time and Color"),
 
-                new Lesson04aViewModel(typeof(AlteringViewXamlPage), "Altering View",
-                        "Alter view properties using XAML binding"),
+                new Lesson04aViewModel(typeof(SelectingValueExercisePage), "UI Selecting a Value Exercise",
+                        "Select values from various UI elements"),
 
-                new Lesson04aViewModel(typeof(ListViewDemoPage), "ListView Demo",
-                        "Use a ListView with data bindings"),
- 
-                new Lesson04aViewModel(typeof(ListViewCustomizationPage), "ListView Customization",
-                        "Customize a ListView using ViewCell"),
+                new Lesson04aViewModel(typeof(ListViewExercise1), "ListView Exercise1",
+                        "Connect a ListView to Datamodel"),
+
+                new Lesson04aViewModel(typeof(ListViewExercise2), "ListView Exercise2",
+                        "Customize the ListView by adding images"),
                 
-                new Lesson04aViewModel(typeof(ListViewGroupingPage), "ListView Grouping",
-                        "Group ListView using GroupHeaderTemplate and Linq"),
- */              
+                new Lesson04aViewModel(typeof(ListViewExercise3), "ListView Exercise3",
+                        "Customize the ListView by adding buttons"),
+  
+                new Lesson04aViewModel(typeof(ListViewExercise4), "ListView Exercise4",
+                        "Use Linq to group items"),
+                
+                new Lesson04aViewModel(typeof(StateManagement1), "StateManagement Exercise1",
+                        "Accessing Global Data"),
             };
         }
 

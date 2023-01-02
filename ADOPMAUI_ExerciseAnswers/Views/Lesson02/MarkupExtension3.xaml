@@ -29,7 +29,7 @@
             </Label.FormattedText>
         </Label>
         <Label Text="{OnIdiom Desktop = 'Hello Desktop', Phone='Hello Phone', Default='Hello all others'}"/>
-        <Switch IsToggled="{OnIdiom Desktop = True, Default=False}"/>
-
+        <Switch IsToggled="{OnIdiom Desktop = 'True', Default='False'}"/>
+        <Button IsEnabled="{OnIdiom Desktop = 'False', Default='True'}"></Button>
     </StackLayout>
 </ContentPage>

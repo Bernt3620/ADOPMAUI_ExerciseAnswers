@@ -81,6 +81,33 @@
 	  <Compile Update="Views\Lesson03\ScrollViewExercise.xaml.cs">
 	    <DependentUpon>ScrollViewExercise.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Lesson04\StateManagement1.xaml.cs">
+	    <DependentUpon>StateManagement1.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson04\ListViewExercise3.xaml.cs">
+	    <DependentUpon>ListViewExercise3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson04\ListViewExercise1.xaml.cs">
+	    <DependentUpon>ListViewExercise1.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson04\ListViewExercise2.xaml.cs">
+	    <DependentUpon>ListViewExercise2.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson04\ListViewExercise4.xaml.cs">
+	    <DependentUpon>ListViewExercise4.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson05\ListViewExercise1.xaml.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson05\ListViewExercise2.xaml.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson05\ListViewExercise3.xaml.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson05\ListViewExercise4.xaml.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -126,7 +153,40 @@
 	  <MauiXaml Update="Views\Lesson04a.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\StateManagement1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\ListViewExercise3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\ListViewExercise1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\ListViewExercise4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\ListViewExercise2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\SettingValueExercisePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson04\SettingValueExplorePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson05a.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\ListViewExercise1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\ListViewExercise2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\ListViewExercise3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\ListViewExercise4.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson06a.xaml">

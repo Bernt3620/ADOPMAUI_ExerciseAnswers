@@ -37,5 +37,23 @@
                 Maximum="1"
                 VerticalOptions="CenterAndExpand" Value="1" />
 
+        <Frame>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HeightRequest="300" WidthRequest="300">
+                    <BoxView Color="Blue" 
+                          Rotation= "{Binding Source={x:Reference Name=slRotation}, Path=Value}"
+                          HeightRequest= "{Binding Source={x:Reference Name=slHeight}, Path=Value}"
+                          WidthRequest= "{Binding Source={x:Reference Name=slWidth}, Path=Value}"
+                            />
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="20">
+                    <Slider x:Name="slWidth" WidthRequest="200" Minimum="50" Maximum="300"></Slider>
+                    <Slider x:Name="slHeight" WidthRequest="200" Minimum="50" Maximum="300"></Slider>
+                    <Slider x:Name="slRotation" WidthRequest="200" Minimum="0" Maximum="360"></Slider>
+                </StackLayout>
+            </StackLayout>
+            
+        </Frame>
+
     </StackLayout>
 </ContentPage>

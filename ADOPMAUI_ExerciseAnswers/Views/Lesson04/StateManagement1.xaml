@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADOPMAUI_Exercise.Views.Lesson04.StateManagement1"
+             Padding = "20">
+    <ScrollView>
+    <StackLayout Spacing="30">
+        <Frame HeightRequest="200">
+        <ListView x:Name="lvFriends">
+		    <ListView.ItemTemplate>
+			    <DataTemplate>
+				    <TextCell Text="{Binding FullName}" Detail="{Binding FavoriteColor.FriendlyName}"/>
+			    </DataTemplate>
+		    </ListView.ItemTemplate>
+	    </ListView>
+        </Frame>
+
+        <Frame HeightRequest="100">
+            <ListView x:Name="lvCities">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Continent}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </Frame>
+
+        <Frame HeightRequest="100">
+            <ListView x:Name="lvColors">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding FriendlyName}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
+        </Frame>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
