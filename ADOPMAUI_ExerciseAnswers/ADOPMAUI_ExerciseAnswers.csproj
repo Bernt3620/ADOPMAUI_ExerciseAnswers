@@ -108,6 +108,12 @@
 	  <Compile Update="Views\Lesson05\ListViewExercise4.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Lesson05\ModelessNavigation1.xaml.cs">
+	    <DependentUpon>ModelessNavigation1.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Lesson05\WebViewExercise1.xaml.cs">
+	    <DependentUpon>WebViewExercise1.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -184,6 +190,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson05\ListViewExercise4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\ModelessNavigation1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\WebViewExercise1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson05\WebViewExplorePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson06a.xaml">

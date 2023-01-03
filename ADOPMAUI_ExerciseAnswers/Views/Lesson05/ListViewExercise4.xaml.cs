@@ -20,6 +20,14 @@ namespace ADOPMAUI_Exercise.Views.Lesson05
             CustomGroupedList.ItemsSource = groupedList;
         }
 
+        protected override void OnNavigatedTo(NavigatedToEventArgs args)
+        {
+            base.OnNavigatedTo(args);
+
+            //Routing of this page
+            Title += $"   ({Shell.Current.CurrentState.Location.ToString()})";
+        }
+
         private async void ListViewItemTapped(object sender, ItemTappedEventArgs e)
         {
             City item = (City)e.Item;
@@ -35,12 +43,12 @@ namespace ADOPMAUI_Exercise.Views.Lesson05
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PopAsync();
+            await Shell.Current.GoToAsync("../listviewexercise3");
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            //await Navigation.PopToRootAsync();
+            await Shell.Current.GoToAsync("..");
         }
     }
 }

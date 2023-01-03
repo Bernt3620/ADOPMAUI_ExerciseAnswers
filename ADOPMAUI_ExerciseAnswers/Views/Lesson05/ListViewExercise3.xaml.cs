@@ -13,6 +13,13 @@ namespace ADOPMAUI_Exercise.Views.Lesson05
             InitializeComponent();
             ButtonList.ItemsSource = City.List;
         }
+        protected override void OnNavigatedTo(NavigatedToEventArgs args)
+        {
+            base.OnNavigatedTo(args);
+
+            //Routing of this page
+            Title += $"   ({Shell.Current.CurrentState.Location.ToString()})";
+        }
 
         private async void ButtonList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
@@ -29,12 +36,12 @@ namespace ADOPMAUI_Exercise.Views.Lesson05
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new ListViewGroupedExercisePage());
+            await Shell.Current.GoToAsync("../listviewexercise4");
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            //await Navigation.PopAsync();
+            await Shell.Current.GoToAsync("../listviewexercise2");
         }
     }
 }

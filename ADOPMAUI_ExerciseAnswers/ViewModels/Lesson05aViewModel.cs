@@ -1,22 +1,24 @@
 ﻿using ADOPMAUI_Exercise.Views.Lesson05;
 using Microsoft.Maui.Controls;
+using System.Text.RegularExpressions;
 
 namespace ADOPMAUI_Exercise.ViewModels
 {
     public class Lesson05aViewModel
     {
-        public Lesson05aViewModel(Type type, string title, string description)
+        private static string RoutePrefix = "//lesson5/";
+        public Type Type { private set; get; }
+        public string Title { private set; get; }
+        public string Description { private set; get; }
+        public string Route { private set; get; }
+
+        public Lesson05aViewModel(Type type, string title, string description, string route = null)
         {
             Type = type;
             Title = title;
             Description = description;
+            Route = route ?? RoutePrefix + Regex.Replace(title.ToLower(), @"\W", "");
         }
-
-        public Type Type { private set; get; }
-
-        public string Title { private set; get; }
-
-        public string Description { private set; get; }
 
         static Lesson05aViewModel()
         {
@@ -33,7 +35,15 @@ namespace ADOPMAUI_Exercise.ViewModels
 
                 new Lesson05aViewModel(typeof(ListViewExercise4), "ListView Exercise4",
                         "Use Linq to group items"),
+                
+                //new Lesson05aViewModel(typeof(ModelessNavigation1), "Modeless Navigation Exercise1",
+                //        "Navigate outside the Shell"),
             };
+
+            foreach (var item in All)
+            {
+                Routing.RegisterRoute(item.Route, item.Type);
+            }
         }
 
         public static IList<Lesson05aViewModel> All { private set; get; }
