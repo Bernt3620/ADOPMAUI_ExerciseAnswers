@@ -14,9 +14,7 @@ namespace ADOPMAUI_Exercise.Views.Lesson04
         {
             InitializeComponent();
 
-            IEnumerable<City> items = City.List;
-            var groupedList = items.OrderBy(c => c.Continent).ThenBy(c => c.Population).GroupBy(c => c.Continent);
-
+            var groupedList = City.List.OrderBy(c => c.Continent).ThenBy(c => c.Population).GroupBy(c => c.Continent);
             CustomGroupedList.ItemsSource = groupedList;
         }
 

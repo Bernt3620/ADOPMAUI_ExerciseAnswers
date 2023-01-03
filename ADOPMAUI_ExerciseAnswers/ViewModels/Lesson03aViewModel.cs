@@ -22,13 +22,13 @@ namespace ADOPMAUI_Exercise.ViewModels
             All = new List<Lesson03aViewModel>
             {
                 new Lesson03aViewModel(typeof(StackLayoutExercise), "StackLayout Exercise",
-                                    "Try out StackLayout in this exercise"),
+                                    "Try out StackLayout"),
                 new Lesson03aViewModel(typeof(AbsoluteLayoutExercise), "AbsoluteLayout Exercise",
-                                    "Try out AbsoluteLayout in this exercise"),
+                                    "Try out AbsoluteLayout"),
                 new Lesson03aViewModel(typeof(GridLayoutExercise), "GridLayout Exercise",
-                                    "Try out GridLayout in this exercise"),
+                                    "Try out GridLayout"),
                 new Lesson03aViewModel(typeof(ScrollViewExercise), "ScrollView Exercise",
-                                    "Try out ScrollView in this exercise"),
+                                    "Try out ScrollView"),
             };
         }
 

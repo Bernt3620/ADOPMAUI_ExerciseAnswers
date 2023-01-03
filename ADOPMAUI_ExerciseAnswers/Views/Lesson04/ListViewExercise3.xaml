@@ -2,7 +2,8 @@
 <ContentPage    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 				x:Class="ADOPMAUI_Exercise.Views.Lesson04.ListViewExercise3"
-				Padding="20">
+				Padding="20"
+                Title="ListViewExercise3">
     <StackLayout>
         <ListView x:Name="ButtonList" RowHeight="100" HasUnevenRows="true" ItemTapped="ButtonList_ItemTapped" >
 			<ListView.ItemTemplate>

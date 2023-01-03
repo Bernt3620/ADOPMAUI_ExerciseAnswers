@@ -100,5 +100,15 @@ namespace ADOPMAUI_Exercise.Views.Lesson04
         {
             lblOtherChanged.Text = $"DatePicker DateSelected: New Date:{e.NewDate} Old Date: {e.OldDate}";
         }
+
+        private void ContentPage_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName != "Width" && e.PropertyName != "Height") return;
+            if (lblPropChanged == null) return;
+
+            var s = (ContentPage)sender;
+            lblOtherChanged.Text = $"Page PropertyChanged: Width:{s.Width}, Height:{s.Height}";
+
+        }
     }
 }

@@ -23,11 +23,11 @@ namespace ADOPMAUI_Exercise.ViewModels
             All = new List<Lesson04aViewModel>
             {
 
-                new Lesson04aViewModel(typeof(SelectingValueExercisePage), "UI Selecting a Value Exercise",
+                new Lesson04aViewModel(typeof(SelectingValueExercisePage), "Setting Value Exercise",
                         "Select values from various UI elements"),
 
                 new Lesson04aViewModel(typeof(ListViewExercise1), "ListView Exercise1",
-                        "Connect a ListView to Datamodel"),
+                        "Connect a ListView to datamodel"),
 
                 new Lesson04aViewModel(typeof(ListViewExercise2), "ListView Exercise2",
                         "Customize the ListView by adding images"),
@@ -36,7 +36,7 @@ namespace ADOPMAUI_Exercise.ViewModels
                         "Customize the ListView by adding buttons"),
   
                 new Lesson04aViewModel(typeof(ListViewExercise4), "ListView Exercise4",
-                        "Use Linq to group items"),
+                        "Use Linq to group items in a ListView"),
                 
                 new Lesson04aViewModel(typeof(StateManagement1), "StateManagement Exercise1",
                         "Accessing Global Data"),

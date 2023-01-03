@@ -4,7 +4,7 @@
              x:Class="ADOPMAUI_Exercise.Views.Lesson04.SelectingValueExercisePage"
              xmlns:models="clr-namespace:ADOPMAUI_Exercise.Models"
              Title="Selecting Value Exercise"
-             Padding="10">
+             Padding="10" PropertyChanged="ContentPage_PropertyChanged">
     <ScrollView>
         <VerticalStackLayout>
             <Grid ColumnSpacing="20">
