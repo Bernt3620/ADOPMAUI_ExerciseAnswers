@@ -5,8 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ADOPMAUI_Exercise"
     xmlns:views="clr-namespace:ADOPMAUI_Exercise.Views"
-
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Flyout"
+    Title="ADOP MAUI Exercise Answers">
 
     <ShellContent
         Title="Home"
