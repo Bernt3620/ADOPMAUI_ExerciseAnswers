@@ -108,8 +108,8 @@
 	  <Compile Update="Views\Lesson05\ListViewExercise4.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\Lesson05\WebViewExercise1.xaml.cs">
-	    <DependentUpon>WebViewExercise1.xaml</DependentUpon>
+	  <Compile Update="Views\Lesson05\WebViewExplore.xaml.cs">
+	    <DependentUpon>WebViewExplore.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -189,7 +189,7 @@
 	  <MauiXaml Update="Views\Lesson05\ListViewExercise4.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Lesson05\WebViewExercise1.xaml">
+	  <MauiXaml Update="Views\Lesson05\WebViewExplore.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson06a.xaml">

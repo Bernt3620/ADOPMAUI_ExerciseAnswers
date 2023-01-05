@@ -3,7 +3,7 @@ using ADOPMAUI_Exercise.Models;
 
 namespace ADOPMAUI_Exercise.Views.Lesson05
 {
-    public partial class WebViewExercise1 : ContentPage
+    public partial class WebViewExplore : ContentPage
     {
         List<NewsSource> myNewsSources = NewsSource.All.ToList();
         Random rnd = new Random();
@@ -11,13 +11,23 @@ namespace ADOPMAUI_Exercise.Views.Lesson05
         public NewsSource CurrentNewsSource { get; set; }
 
 
-        public WebViewExercise1()
+        public WebViewExplore()
         {
             InitializeComponent();
 
             CurrentNewsSource = myNewsSources[rnd.Next(0, myNewsSources.Count)];
             BindingContext = this;
         }
+
+        public WebViewExplore(NewsSource newsSource)
+        {
+            InitializeComponent();
+
+            CurrentNewsSource = newsSource;
+            BindingContext = this;
+
+        }
+
         protected override void OnNavigatedTo(NavigatedToEventArgs args)
         {
             base.OnNavigatedTo(args);

@@ -36,7 +36,7 @@ namespace ADOPMAUI_Exercise.ViewModels
                 new Lesson05aViewModel(typeof(ListViewExercise4), "ListView Exercise4",
                         "Use Linq to group items"),
                 
-                new Lesson05aViewModel(typeof(WebViewExercise1), "WebView Exercise1",
+                new Lesson05aViewModel(typeof(WebViewExplore), "WebView Explore",
                         "Use WebView to read som newspapers"),
             };
 

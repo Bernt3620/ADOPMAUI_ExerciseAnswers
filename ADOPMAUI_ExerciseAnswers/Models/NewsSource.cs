@@ -11,7 +11,6 @@ namespace ADOPMAUI_Exercise.Models
         public string Name { private set; get; }
 
         public string Url { private set; get; }
-        //HttpUtility.UrlDecode(CurrentNewsSource.Url)
 
         public static IEnumerable<NewsSource> All { private set; get; }
 
