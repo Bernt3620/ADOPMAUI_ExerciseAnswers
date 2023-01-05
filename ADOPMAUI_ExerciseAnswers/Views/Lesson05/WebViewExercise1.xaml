@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                x:Class="ADOPMAUI_Exercise.Views.Lesson05.WebViewExercise1">
+                x:Class="ADOPMAUI_Exercise.Views.Lesson05.WebViewExercise1"
+                x:Name="thisPage">
     <ContentPage.Content>
         <ScrollView>
-            <VerticalStackLayout>
-                <WebView Source="{Binding .}" />
-                <Frame BorderColor="Black">
-                    <StackLayout>
-                        <Button Text="Next" Clicked="Button_Clicked" />
-                        <Button Text="Back" Clicked="Button_Clicked_1" />
-                    </StackLayout>
-                </Frame>
+            <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <WebView Source="{Binding CurrentNewsSource.Url}"
+                         WidthRequest="{Binding Source={x:Reference thisPage}, Path=Width}"
+                         HeightRequest="{Binding Source={x:Reference thisPage}, Path=Height}"/>
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
