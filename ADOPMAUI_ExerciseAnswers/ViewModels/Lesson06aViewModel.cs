@@ -1,4 +1,4 @@
-﻿//using ADOPMAUI_Exercise.Views.Lesson06;
+﻿using ADOPMAUI_Exercise.Views.Lesson06;
 using Microsoft.Maui.Controls;
 using System.Text.RegularExpressions;
 
@@ -24,10 +24,10 @@ namespace ADOPMAUI_Exercise.ViewModels
         {
             All = new List<Lesson06aViewModel>
             {
-/*
-                new Lesson06aViewModel(typeof(ActivityProgressPage), "ActivityIndicator and ProgressBar Demos",
-                        "Show usage of Activity and Progress indicators"),
-*/
+
+                new Lesson06aViewModel(typeof(ActivityProgressExercise), "Progress and Activity Indicators",
+                        "Add Activity and Progress indicators to a page using and async task"),
+
             };
 
             foreach (var item in All)

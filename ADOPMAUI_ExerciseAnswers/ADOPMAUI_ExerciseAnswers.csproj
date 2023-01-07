@@ -111,6 +111,9 @@
 	  <Compile Update="Views\Lesson05\WebViewExplore.xaml.cs">
 	    <DependentUpon>WebViewExplore.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Lesson06\ActivityProgressExercise.xaml.cs">
+	    <DependentUpon>ActivityProgressExercise.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -193,6 +196,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Lesson06a.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Lesson06\ActivityProgressExercise.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
