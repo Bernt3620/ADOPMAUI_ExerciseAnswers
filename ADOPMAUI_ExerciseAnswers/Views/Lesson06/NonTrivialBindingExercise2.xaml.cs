@@ -5,70 +5,58 @@ using System.Runtime.CompilerServices;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ADOPMAUI_Exercise.ViewModels;
 
 namespace ADOPMAUI_Exercise.Views.Lesson06
 {
-    public partial class BindingExercise : ContentPage
+    public partial class NonTrivialBindingExercise2 : ContentPage
     {
-        public BindingExercise()
+        private NonTrivialBindingExercise2_ViewModel _viewModel;
+
+        public NonTrivialBindingExercise2()
         {
             InitializeComponent();
 
-            #region Step 3
-            BindingContext = new BindingExerciseViewModel { SliderValue = 0.2F, StepperValue = 0.2F };
-            #endregion
+            BindingContext = _viewModel = new NonTrivialBindingExercise2_ViewModel { SliderValue = 0.2F, StepperValue = 2 };
         }
 
-        #region Step 2
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            mySlider.Value = mySlider.Maximum / 2;
-            myStepper.Value = myStepper.Maximum / 2;
-        }
-        #endregion
-
-        #region Step 5
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            ((BindingExerciseViewModel)BindingContext).SliderValue = 0.5F;
-            ((BindingExerciseViewModel)BindingContext).StepperValue = 5;
-        }
-        #endregion
 
         private async void Button_Clicked_2(object sender, EventArgs e)
         {
-            var item = BindingContext as BindingExerciseViewModel;
             await DisplayAlert("Instance Values", 
-                $"SliderValue {item.SliderValue}\nStepperValue {item.StepperValue}", "OK");
+                $"SliderValue {_viewModel.SliderValue}\nStepperValue {_viewModel.StepperValue}", "OK");
 
 
         }
     }
 
     #region Step 3 and 4
-    public class BindingExerciseViewModel: BaseViewModel //Inheritance step 4
+    public class NonTrivialBindingExercise2_ViewModel //: BaseViewModel //Inheritance Step 4
     {
-        #region Step 3 
-        //public float SliderValue { get; set; }
-        //public float StepperValue { get; set; }
+        #region Step 3
+        
+        public float SliderValue { get; set; }
+        public int StepperValue { get; set; }
+        
         #endregion
 
         
         #region Step 4
-        
+        /*
         float _slidervalue;
         public float SliderValue
         {
             set => Set<float>(ref _slidervalue, value, "SliderValue");
             get => _slidervalue;
         }
-        float _steppervalue;
-        public float StepperValue
+
+        int _steppervalue;
+        public int StepperValue
         {
-            set => Set<float>(ref _steppervalue, value, "StepperValue");
+            set => Set<int>(ref _steppervalue, value, "StepperValue");
             get => _steppervalue;
         }
-        
+        */
         #endregion
 
         #region Step 6
@@ -82,23 +70,6 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
         #endregion
     }
 
-
-    #region Step 4
-    /* Copy into  BindingExerciseViewModel and replace exisiting properties
-        float _slidervalue;
-        public float SliderValue
-        {
-            set => Set<float>(ref _slidervalue, value, "SliderValue");
-            get => _slidervalue;
-        }
-        float _steppervalue;
-        public float StepperValue
-        {
-            set => Set<float>(ref _steppervalue, value, "StepperValue");
-            get => _steppervalue;
-        }
-    */
-    #endregion
 
     public abstract class BaseViewModel : INotifyPropertyChanged
     {

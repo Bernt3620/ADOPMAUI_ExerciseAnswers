@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace ADOPMAUI_Exercise.ViewModels
 {
-    public class BindingFinalViewModel : BaseViewModel //Inheritance step 4
+    public class NonTrivialBindingExercise3_ViewModel : BaseViewModel
     {
         float _slidervalue;
         public float SliderValue
@@ -14,10 +14,11 @@ namespace ADOPMAUI_Exercise.ViewModels
             set => Set<float>(ref _slidervalue, value, "SliderValue");
             get => _slidervalue;
         }
-        float _steppervalue;
-        public float StepperValue
+        
+        int _steppervalue;
+        public int StepperValue
         {
-            set => Set<float>(ref _steppervalue, value, "StepperValue");
+            set => Set<int>(ref _steppervalue, value, "StepperValue");
             get => _steppervalue;
         }
 

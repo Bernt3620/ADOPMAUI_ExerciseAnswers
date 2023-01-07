@@ -28,14 +28,17 @@ namespace ADOPMAUI_Exercise.ViewModels
                 new Lesson06aViewModel(typeof(ActivityProgressExercise), "Progress and Activity Indicators",
                         "Add Activity and Progress indicators to a page using and async task"),
 
-                new Lesson06aViewModel(typeof(BindingExercise), "Non Trivial Binding Exercise1",
+                new Lesson06aViewModel(typeof(NonTrivialBindingExercise1), "Non Trivial Binding Exercise1",
                         "Implement INotifyPropertyChange"),
 
-                new Lesson06aViewModel(typeof(BindingFinal), "Non Trivial Binding Exercise2",
-                        "Implement INotifyPropertyChange"),
+                new Lesson06aViewModel(typeof(NonTrivialBindingExercise2), "Non Trivial Binding Exercise2",
+                        "Implement Command"),
 
-                new Lesson06aViewModel(typeof(GridBindingExercise), "Non Trivial Binding Exercise3",
-                        "Implement INotifyPropertyChange"),
+                new Lesson06aViewModel(typeof(NonTrivialBindingExercise3), "Non Trivial Binding Exercise3",
+                        "Complete ViewModel separation"),
+
+                new Lesson06aViewModel(typeof(NonTrivialBindingExercise4), "Non Trivial Binding Exercise4",
+                        "Non trivial binding in another example"),
             };
 
             foreach (var item in All)

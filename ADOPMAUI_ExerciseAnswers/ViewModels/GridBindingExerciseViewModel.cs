@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace ADOPMAUI_Exercise.ViewModels
 {
-	public class GridBindingExerciseViewModel : BaseViewModel
+	public class NonTrivialBindingExercise4_ViewModel : BaseViewModel
 	{
 		string _name;
 		public string Name { get =>_name; set => Set<string>(ref _name, value, "Name"); } 
@@ -15,7 +15,7 @@ namespace ADOPMAUI_Exercise.ViewModels
 
 		ICommand _cityToggle;
 		public ICommand CityToggle => _cityToggle;
-        public GridBindingExerciseViewModel()
+        public NonTrivialBindingExercise4_ViewModel()
         {
 			_name = "Ove";
 			_email = "ove@glad.com";
