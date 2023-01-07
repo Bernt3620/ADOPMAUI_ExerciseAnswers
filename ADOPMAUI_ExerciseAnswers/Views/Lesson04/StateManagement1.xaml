@@ -6,35 +6,35 @@
                 Title="StateManagement1">
     <ScrollView>
     <StackLayout Spacing="30">
-        <Frame HeightRequest="200">
-        <ListView x:Name="lvFriends">
+        <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4" HeightRequest="200">
+            <ListView x:Name="lvFriends">
 		    <ListView.ItemTemplate>
 			    <DataTemplate>
 				    <TextCell Text="{Binding FullName}" Detail="{Binding FavoriteColor.FriendlyName}"/>
 			    </DataTemplate>
 		    </ListView.ItemTemplate>
 	    </ListView>
-        </Frame>
+        </Border>
 
-        <Frame HeightRequest="100">
+        <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4" HeightRequest="100">
             <ListView x:Name="lvCities">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Continent}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
-        </Frame>
+            </ListView>
+        </Border>
 
-        <Frame HeightRequest="100">
+       <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4" HeightRequest="100">
             <ListView x:Name="lvColors">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding FriendlyName}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
-         </ListView>
-        </Frame>
+            </ListView>
+        </Border>
     </StackLayout>
     </ScrollView>
 </ContentPage>

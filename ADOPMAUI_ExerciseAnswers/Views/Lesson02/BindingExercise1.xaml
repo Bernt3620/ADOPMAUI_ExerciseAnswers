@@ -37,7 +37,7 @@
                 Maximum="1"
                 VerticalOptions="CenterAndExpand" Value="1" />
 
-        <Frame>
+        <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4" >
             <StackLayout Orientation="Horizontal">
                 <StackLayout HeightRequest="300" WidthRequest="300">
                     <BoxView Color="Blue" 
@@ -53,7 +53,7 @@
                 </StackLayout>
             </StackLayout>
             
-        </Frame>
+        </Border>
 
     </StackLayout>
 </ContentPage>

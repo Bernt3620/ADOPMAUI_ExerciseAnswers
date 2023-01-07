@@ -12,11 +12,11 @@
 			    </DataTemplate>
 		    </ListView.ItemTemplate>
 	    </ListView>
-        <Frame BorderColor="Black">
+        <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4">
             <StackLayout>
                 <Button Text="ListView2" Clicked="Button_Clicked" />
                 <Button Text="Menu" Clicked="Button_Clicked_1" />
             </StackLayout>
-        </Frame>
+        </Border>
     </StackLayout>
 </ContentPage>
