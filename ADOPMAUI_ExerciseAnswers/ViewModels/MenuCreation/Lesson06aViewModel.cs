@@ -38,7 +38,7 @@ namespace ADOPMAUI_Exercise.ViewModels
                         "Complete ViewModel separation"),
 
                 new Lesson06aViewModel(typeof(NonTrivialBindingExercise4), "Non Trivial Binding Exercise4",
-                        "Non trivial binding in another example"),
+                        "Non trivial binding in completeness"),
             };
 
             foreach (var item in All)

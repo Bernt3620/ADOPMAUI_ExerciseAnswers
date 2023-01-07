@@ -22,8 +22,8 @@ namespace ADOPMAUI_Exercise.ViewModels
             get => _steppervalue;
         }
 
-        Command _SetMiddleCommand;
-        public Command SetMiddleCommand => _SetMiddleCommand ?? (_SetMiddleCommand =
+        Command _setMiddleCommand;
+        public Command SetMiddleCommand => _setMiddleCommand ?? (_setMiddleCommand =
             new Command(() =>
             {
                 SliderValue = 0.5F;
