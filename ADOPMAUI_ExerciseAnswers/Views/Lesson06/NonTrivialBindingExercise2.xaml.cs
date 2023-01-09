@@ -30,19 +30,9 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
         }
     }
 
-    #region Step 3 and 4
-    public class NonTrivialBindingExercise2_ViewModel //: BaseViewModel //Inheritance Step 4
+    public class NonTrivialBindingExercise2_ViewModel : BaseViewModel //Inheritance Step 4
     {
-        #region Step 3
         
-        public float SliderValue { get; set; }
-        public int StepperValue { get; set; }
-        
-        #endregion
-
-        
-        #region Step 4
-        /*
         float _slidervalue;
         public float SliderValue
         {
@@ -56,10 +46,8 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
             set => Set<int>(ref _steppervalue, value, "StepperValue");
             get => _steppervalue;
         }
-        */
-        #endregion
 
-        #region Step 6
+        #region Step 1
         Command _SetMiddleCommand;
         public Command SetMiddleCommand => _SetMiddleCommand ?? (_SetMiddleCommand =
             new Command(() =>
@@ -69,31 +57,4 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
             }));
         #endregion
     }
-
-
-    public abstract class BaseViewModel : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void Set<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
-        {
-            if (!EqualityComparer<T>.Default.Equals(field, newValue))
-            {
-                field = newValue;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    #endregion
-
-    #region Step 6
-    /* Copy into  BindingExerciseViewModel and replace exisiting properties
-    Command _SetMiddleCommand;
-    public Command SetMiddleCommand => _SetMiddleCommand ?? (_SetMiddleCommand =
-        new Command(() =>
-        {
-            SliderValue = 0.5F;
-            StepperValue = 5;
-        }));
-    */
-    #endregion
 }

@@ -37,8 +37,8 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
         #region Step 5
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            ((NonTrivialBindingExercise1_ViewModel)BindingContext).SliderValue = 0.5F;
-            ((NonTrivialBindingExercise1_ViewModel)BindingContext).StepperValue = 5;
+            _viewModel.SliderValue = 0.5F;
+            _viewModel.StepperValue = 5;
         }
 
         private async void Button_Clicked_2(object sender, EventArgs e)
@@ -51,18 +51,17 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
     }
 
     #region Step 3 and 4
-    public class NonTrivialBindingExercise1_ViewModel //: BaseViewModel //Inheritance Step 4, BaseViewModel in namespace ADOPMAUI_Exercise.ViewModels
+    public class NonTrivialBindingExercise1_ViewModel : BaseViewModel //Inheritance Step 4, BaseViewModel in namespace ADOPMAUI_Exercise.ViewModels
     {
         #region Step 3
         
-        public float SliderValue { get; set; }
-        public int StepperValue { get; set; }
+        //public float SliderValue { get; set; }
+        //public int StepperValue { get; set; }
         
         #endregion
 
         
         #region Step 4
-        /*
         float _slidervalue;
         public float SliderValue
         {
@@ -76,7 +75,6 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
             set => Set<int>(ref _steppervalue, value, "StepperValue");
             get => _steppervalue;
         }
-        */
         #endregion
     }
     #endregion

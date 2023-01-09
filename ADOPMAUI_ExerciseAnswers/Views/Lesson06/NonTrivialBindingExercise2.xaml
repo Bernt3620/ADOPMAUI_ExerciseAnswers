@@ -25,8 +25,6 @@
             </Border>
             <Border Margin="5" Padding="20" Stroke="#C49B33" StrokeThickness="4">
                 <StackLayout>
-                    <Label Text="Step1 here"/>
-
                     <!-- Step 1 begin -->
                     <Button Text="Set to middle" Command="{Binding SetMiddleCommand}"/>
                     <!-- Step 1 end -->
