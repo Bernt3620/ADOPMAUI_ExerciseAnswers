@@ -14,7 +14,7 @@ namespace ADOPMAUI_Exercise.ViewModels
 		
 		
 		private City _shownCity;
-        public City ShownCity { get => _shownCity; set => Set<City>(ref _shownCity, value, "ShownCity"); }
+        public City ShownCity { get => _shownCity; set => Set<City>(ref _shownCity, value); }
 
 
 		ICommand _next;

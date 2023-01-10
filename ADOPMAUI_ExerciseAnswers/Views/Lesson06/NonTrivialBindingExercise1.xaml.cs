@@ -65,14 +65,14 @@ namespace ADOPMAUI_Exercise.Views.Lesson06
         float _slidervalue;
         public float SliderValue
         {
-            set => Set<float>(ref _slidervalue, value, "SliderValue");
+            set => Set<float>(ref _slidervalue, value);
             get => _slidervalue;
         }
 
         int _steppervalue;
         public int StepperValue
         {
-            set => Set<int>(ref _steppervalue, value, "StepperValue");
+            set => Set<int>(ref _steppervalue, value);
             get => _steppervalue;
         }
         #endregion

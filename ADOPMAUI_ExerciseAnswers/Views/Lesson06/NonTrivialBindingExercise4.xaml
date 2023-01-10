@@ -4,7 +4,7 @@
 x:Class="ADOPMAUI_Exercise.Views.Lesson06.NonTrivialBindingExercise4" Title="Grid Exercise">
     <ContentPage.Content>
         <StackLayout WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center">
-            <Border Stroke="#C49B33" StrokeThickness="4" BackgroundColor="LightGrey">
+            <Border Stroke="#C49B33" StrokeThickness="4" BackgroundColor="LightGrey" Padding="10">
                 <Grid ColumnSpacing="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
