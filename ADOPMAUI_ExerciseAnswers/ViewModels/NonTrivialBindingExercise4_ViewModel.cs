@@ -29,7 +29,7 @@ namespace ADOPMAUI_Exercise.ViewModels
             }));
 
         ICommand _prev;
-        public ICommand Prev => _prev ?? (_next =
+        public ICommand Prev => _prev ?? (_prev =
             new Command(() =>
             {
                 _cityIdx--;
