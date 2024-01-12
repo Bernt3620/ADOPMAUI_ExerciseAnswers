@@ -26,7 +26,7 @@
 		<ApplicationTitle>ADOPMAUI_ExerciseAnswers</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.adopmaui_exerciseanswers</ApplicationId>
+		<ApplicationId>com.companyname.adopmauiexerciseanswers</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
